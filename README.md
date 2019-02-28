@@ -71,6 +71,13 @@ end
 A.act
 ```
 
+```elixir
+1
+6
+6
+-4
+```
+
 -----
 
 ```elixir
@@ -103,4 +110,22 @@ defmodule B do
 end
 
 B.act
+```
+
+```elixir
+[...]
+
+22:18:08.626 [debug] [Logger] `Stream.element`: [{1, <<0>>}, {2, <<0>>}, {3,
+<<0>>}, {1, <<0>>}, {2, <<0>>}, {3, <<0>>}]
+#Stream<[...]>
+#Stream<[...]>
+
+22:18:08.631 [debug] [Logger] `Stream.element`: [{1, <<0>>}, {2, <<0>>}, {3,
+<<0>>}]
+#Stream<[...]>
+#Stream<[...]>
+
+22:18:08.631 [debug] [Logger] `Stream.element`: [{2, <<1>>}, {3, <<1>>}, {4,
+<<1>>}]
+:ok
 ```
